@@ -15,3 +15,17 @@ img{
   width: 100%;
 }
 
+h1 {
+  margin: 2rem;
+}
+
+.home-image {
+  max-width: 60%
+}
+
+.navbar {
+  color: black;
+  text-decoration: none;
+  margin: auto;
+}
+

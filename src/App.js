@@ -22,15 +22,16 @@ function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
+      {/* <ApartmentList apartments={apartments} /> */}
 
       <Routes>
-        <Route to="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route
-          to="/apartments"
+          path="/apartments"
           element={<ApartmentList apartments={apartments} />}
         />
-        <Route to="/apartments/:apartmentId" element={<ApartmentDetails />} />
-        <Route to="/apartments/create" element={<CreateApartment />} />
+        <Route path="/apartments/:apartmentId" element={<ApartmentDetails />} />
+        <Route path="/apartments/create" element={<CreateApartment />} />
       </Routes>
     </div>
   );

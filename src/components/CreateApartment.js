@@ -23,14 +23,16 @@ function CreateApartment() {
     setImage("");
   };
 
+  let navigate = useNavigate();
+
   useEffect(() => {
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/apartments", apartments)
       .then(() => {
-        console.log("hello");
+        navigate("/apartments", { replace: true });
       })
       .catch((error) => error);
-  }, [apartments]);
+  }, [apartments, navigate]);
 
   return (
     <>
