@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+.apartment {
+  border: 1px solid black;
+  border-radius: 1rem;
+  max-width: 30%;
+  min-height: 30%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+img{
+  width: 100%;
+}
+
